@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="不超过150个字符"/>
+<meta name="keywords" content="不超过80个字符"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<title>企业会员界面</title>
+<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<div class="wrapper-login">
+	<div class="login-logo w1200"><img src="images/logo.png" alt=""></div>
+	<div class="login-container w1200">
+		<div class="login-left">
+			<ul>
+				<li>欢迎致辞
+					<div class="content content1">
+						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容1</p>
+					</div>
+				</li>
+				<li>会员权益
+					<div class="content content2">
+						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这2</p>
+					</div>
+				</li>
+				<li>如何申请
+					<div class="content content3">
+						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容23</p>
+					</div>
+				</li>
+				<li>如何预订
+					<div class="content content4">
+						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容4</p>
+					</div>
+				</li>
+				<li class="bottom">注意事项
+					<div class="content content5">
+						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容5</p>
+					</div>
+				</li>
+			</ul>
+			<div class="phone">
+				<i></i>
+				<p>138-2312-2211</p>
+			</div>
+			<div class="email">
+				<i></i>
+				<p>huds@dossen.com</p>
+			</div>
+		</div>
+		<div class="login-right">
+			<h2>企业客户登录</h2>
+			<div class="item phone">
+				<input type="text" placeholder="企业协议号 / 手机号">
+			</div>
+			<div class="item password">
+				<input type="password" placeholder="输入密码">
+			</div>
+			<p class="prompt-login">账号密码有误，请重新输入</p>
+			<div class="btn">
+				<input type="submit" value="登 录">
+			</div>
+			<a href="register.html">企业注册</a>
+		</div>
+	</div>
+</div>
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){		
+		$(".login-left ul li").each(function(index,element){
+			$(this).on("mouseenter",function(){
+				$(this).addClass("active");
+				$(this).find(".content").show();
+			})
+			$(this).on("mouseleave",function(){
+				$(this).removeClass("active");
+				$(this).find(".content").hide();
+			});
+		});
+
+		$(".item input").on("input",function(){
+			if($(".phone input").val()!="" && $(".password input").val()!=""){
+				$(".btn").addClass("btn-active");
+				btnCli(".btn-active input");
+			}else{
+				$(".btn").removeClass("btn-active");
+			}
+		});
+	});
+	function contentList(text){
+		var html='<div class="content">';
+			html+='<p>'+text+'</p>';
+			html+='</div>';
+		$(".login-left ul li").append(html);	
+	}
+	function btnCli(obj){
+		$(obj).on("click",function(){
+			if($(".phone input").val()!="123" || $(".password input").val()!="123"){
+				$(".prompt-login").css("visibility","inherit");
+			}else{
+				$(".prompt-login").css("visibility","hidden");
+			}
+		});
+	}
+</script>
+</body>
+</html>

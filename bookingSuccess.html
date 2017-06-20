@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="不超过150个字符"/>
+<meta name="keywords" content="不超过80个字符"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<title>企业会员界面</title>
+<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	<div class="enterprise-header">
+		<div class="w1200">
+			<div class="l"><img src="images/logo.png" alt=""></div>
+			<div class="r">
+				<p>欢迎您，广西XXX工程管理咨询有限公司</p>
+				<!-- <a href="login.html">登录</a> -->
+				<a href="javascript:;">安全退出</a>
+			</div>
+		</div>
+	</div>
+	<div class="container w1200">
+		<div class="title">
+			<a href="index.html">首页</a>  > 
+			<a href="index.html">酒店列表</a>  >  
+			<a href="booking.html"> 填写订单</a> >
+			<a class="the-back" href="bookingSuccess.html">预订成功</a>  
+		</div>
+		<div class="booking-success w1200">
+			<div class="booking-top">
+				<img src="images/booking_success.png" alt="">
+				<div class="r">
+					<h3>酒店预订成功</h3>
+					<p>房间超过<strong>6</strong>间，需要在 <strong>30</strong>分钟 内完成支付，逾期系统将自动取消订单，请知悉！</p>
+				</div>
+			</div>
+			<p>您的订单信息如下：</p>
+			<div class="booking-con w1200">
+				<div class="t">
+					<h2>城市便捷白云山店</h2>
+					<p>地址：广州市白云区大金钟路62号</p>
+					<p>电话：020-32517968</p>
+				</div>
+				<div class="m">
+					<h2>自主大床房</h2>
+					<p>窗户：有窗</p>
+					<p>床型：1.5*2.0m大床</p>
+					<p>楼层：无</p>
+					<p>上网：WIFI</p>
+				</div>
+				<div class="b">
+					<p><span>总价</span><em>¥<strong>258</strong></em></p>
+				</div>	
+			</div>
+			<p>请选择您的支付方式：</p>
+			<div class="booking-pay">
+				<div class="pay1"><input type="radio"><img src="images/booking_pay1.png" alt=""></div>
+				<div class="pay2"><input type="radio"><img src="images/booking_pay2.png" alt=""></div>
+				<a href="">立即支付</a>
+			</div>
+			<div class="booking-prompt">
+				<h5>订单政策</h5>
+				<p>1. 进入您在注册时填写的邮箱，会看到有东呈酒店集团给您发送的邮件，您在线支付成功会收到短信和邮件提醒。</p>
+				<p>2. 订单预订、变更、取消及支付成功后收不到短信提醒等紧急问题：请致电24小时服务热线400-700-7899(座机)，或寻求在线客服帮助以便及时为您解决。</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	<script src="scripts/jquery-3.2.1.min.js"></script>
+	<script>
+		$(function(){
+			$(".booking-pay>div").on("click",function(){
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+		})
+	</script>
+</body>
+</html>

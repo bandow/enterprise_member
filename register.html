@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="不超过150个字符"/>
+<meta name="keywords" content="不超过80个字符"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<title>企业会员界面</title>
+<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	<div class="enterprise-header">
+		<div class="w1200">
+			<div class="l"><img src="images/logo.png" alt=""></div>
+		</div>
+	</div>
+	<div class="register-contaier w1200">
+		<a href="index.html">返回首页</a>
+		<div class="progress">
+			<div class="line"></div>
+			<i class="one">1</i><i class="two">2</i><i class="three">3</i>	
+		</div>
+		<div class="register-info">
+			<h2>公司基本信息</h2>
+			<div class="t">	
+				<div class="info-list">
+					<span>*公司名称：</span>
+					<div class="item company-name"><input type="text" placeholder="公司名字"></div>
+					<div class="prompt-text-img"></div>
+				</div>
+				<div class="info-list">
+					<span>*公司地址：</span>
+					<div class="item address"><input type="text" placeholder="公司详细地址"></div>
+					<div class="prompt-text-img"></div>
+				</div>
+				<div class="info-list">
+					<span>*月均住宿标准：</span>
+					<div class="item-radio">
+						<div class="item-list"><input type="radio"><span>0-50晚</span></div>
+						<div class="item-list"><input type="radio"><span>50-100晚</span></div>
+						<div class="item-list"><input type="radio"><span>100-200晚</span></div>
+						<div class="item-list"><input type="radio"><span>200晚以上</span></div>
+					</div>
+				</div>
+				<div class="info-list">
+					<span>*差旅住宿标准：</span>
+					<div class="item-radio">
+						<div class="item-list"><input type="radio"><span>200元以下</span></div>
+						<div class="item-list"><input type="radio"><span>200-350元</span></div>
+						<div class="item-list"><input type="radio"><span>350-500元</span></div>
+						<div class="item-list"><input type="radio"><span>500元以上</span></div>
+					</div>
+				</div>
+				<div class="info-list">
+					<span>*差旅目标城市：</span>
+					<div class="item city"><input type="text" placeholder="主要差旅城市"></div>
+					<div class="prompt-text-img"></div>
+				</div>
+				<div class="info-list">
+					<span>*已合作酒店公司：</span>
+					<div class="item cooperate"><input type="text" placeholder="曾经合作酒店公司名称"></div>
+					<div class="prompt-text-img"></div>
+				</div>
+			</div>
+			
+			<h2>业务联系人信息</h2>
+			<div class="info-list">
+				<span>*姓名：</span>
+				<div class="item name"><input type="text" placeholder="主要差旅城市"></div>
+				<div class="prompt-text-img"></div>
+			</div>
+			<div class="info-list">
+				<span>*性别：</span>
+				<div class="item-radio">
+					<div class="item-list w100"><input type="radio"><span>男</span></div>
+					<div class="item-list w100"><input type="radio"><span>女</span></div>
+				</div>
+			</div>
+			<div class="info-list">
+				<span>*固定电话：</span>
+				<div class="item phone1"><input type="text" placeholder="公司座机号"></div>
+				<div class="prompt-text-img"></div>
+			</div>
+			<div class="info-list">
+				<span>*手机号：</span>
+				<div class="item phone2"><input type="text" placeholder="联系人手机号"></div>
+				<div class="prompt-text-img"></div>
+			</div>
+			<div class="info-list">
+				<span>*电子邮箱：</span>
+				<div class="item email"><input type="text" placeholder="常用邮箱"></div>
+				<div class="prompt-text-img"></div>
+			</div>
+			<div class="info-list">
+				<span style="line-height:100px;">*营业执照扫描件：</span>
+				<div class="upload img-box full">
+					<section class=" img-section">
+						<div class="z_photo upimg-div clear" >
+				               	 <section class="z_file fl">
+				               	 	<img src="images/up_img.jpg" class="add-img">
+				               	 	<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+				               	 </section>
+				               	 <p class="up-p">(图片限2M内)最多上传3张照片</p>
+				         </div>
+					 </section>
+				</div>
+			</div>
+			<div class="info-list">
+				<span style="line-height:100px;">*个人名片照片：</span>
+				<div class="upload img-box full">
+					<section class=" img-section">
+						<div class="z_photo upimg-div clear" >
+			               	<section class="z_file fl">
+			               	 	<img src="images/up_img.jpg" class="add-img">
+			               	 	<input type="file" name="file" id="file2" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+			               	</section>
+			               	<p class="up-p">(图片限2M内)最多上传3张照片</p>
+				         </div>
+					 </section>
+				</div>
+			</div>
+
+			<div class="btn"><a href="javascript:;">下一步</a></div>
+		</div>
+	</div>
+	<script src="scripts/jquery-3.2.1.min.js"></script>
+	<script src="scripts/imgUp.js"></script>
+	<script>
+		$(function(){
+			$(".item-radio .item-list").on("click",function(){
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+
+	       
+			$(".register-info .btn").on("click",function(){
+				if($(".company-name input").val()==123){
+					$(".company-name").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".company-name").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".address input").val()==123){
+					$(".address").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+					window.location.href="submitSuccess.html";
+				}else{
+					$(".address").next().html('<p>请输入公司名称</p>');
+				}					
+			});
+
+			
+		})
+	</script>
+</body>
+</html>

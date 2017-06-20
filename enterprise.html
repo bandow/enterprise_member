@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="不超过150个字符"/>
+<meta name="keywords" content="不超过80个字符"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<title>企业会员界面</title>
+<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/jquery.ui.css">
+<style>
+	/****************日期插件样式******************/
+	.ui-datepicker-append{
+	    color: #999999;
+	    font-size: 13px;
+	    font-family: 'Microsoft YaHei';
+	    position: absolute;
+	    top: 0px;
+	}
+	.start-span .ui-datepicker-append{
+	    left: 220px;
+	}
+	.end-span .ui-datepicker-append{
+	    left: 488px;
+	}
+	.ui-datepicker{
+	    width: 305px;
+	    padding: 0px;
+	    border: 1px solid #dcdcdc;
+	    border-radius: 0px;
+	}
+	.ui-datepicker-header{
+	    width: 298px;
+	    height: 31px;
+	    line-height: 31px;
+	    border: none;
+	    border-radius: 0px;
+	    color: #ffffff;
+	    padding: 0px;
+	    margin: 0px;
+	    background:#fff;
+	}
+	.ui-datepicker .ui-datepicker-title{
+		border-bottom:1px solid #da004c;
+	}
+	.ui-datepicker-title,.ui-datepicker-title > span{
+	    height: 31px;
+	    line-height: 31px;
+	    font-family: arial;
+	    font-size: 14px;
+	    margin: 0px;
+	    padding: 0px;
+	    color:#da004c;  
+	}
+	.ui-datepicker th{
+	    color: #999;
+	    height: 38px;
+	    line-height: 38px;
+	    font-family: 'Microsoft YaHei';
+	    font-size: 12px;
+	    margin: 0px;
+	    padding: 0px;
+	}
+	.ui-widget-header .ui-state-default,.ui-state-default{
+	    border: none;
+	    background:none;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	    width: 40px;
+	    height: 40px;
+	    line-height: 40px;
+	    text-align: center;
+	    border: none;
+	    color: #555555;
+	    font-size: 12px;
+	    background: #fdfdfd;
+	    margin: 0px;
+	    padding: 0px;
+	}
+	.ui-datepicker td span{
+	    margin: 0px;
+	    padding: 0px;
+	    border: none;
+	}
+	a.ui-state-default:hover,.ui-datepicker-current-day .ui-state-active {
+	    background: #da004c;
+	    color: #ffffff;
+	    border-radius: 100%;
+	}
+	ui-state-hover .ui-icon,.ui-datepicker-next-hover,
+	ui-state-hover .ui-icon,.ui-datepicker-prev-hover{
+	    background: none;
+	}
+
+	.ui-datepicker-next:hover,.ui-datepicker-prev:hover{
+	    background: none;
+	    border: none;
+	}
+	.ui-widget-header .ui-icon,.ui-state-hover .ui-icon{
+	    background: url(images/date-l.png) no-repeat;
+	    top: 6px;
+	}
+	.ui-datepicker-next .ui-icon-circle-triangle-e{
+	    width:10px;
+	    height:21px;
+	    background: url(images/date-r.png) no-repeat;
+	}
+	.ui-datepicker-prev .ui-icon-circle-triangle-e{
+	    width:10px;
+	    height:21px;
+	}
+	.ui-datepicker .ui-datepicker-next span{
+	    /*margin: -5px 0px 0px -35px;*/
+	    width:10px;
+	    height:21px;
+	}
+	.ui-datepicker .ui-datepicker-prev span{
+	    /*margin: -5px 0px 0px 19px;*/
+	     width:10px;
+	    height:21px;
+	}
+	.ui-datepicker .ui-datepicker-prev{
+
+	}
+</style>
+</head>
+<body>
+	<div class="enterprise-header">
+		<div class="w1200">
+			<div class="l"><img src="images/logo.png" alt=""></div>
+			<div class="r">
+				<p>欢迎您，广西XXX工程管理咨询有限公司</p>
+				<a href="login.html">登录</a>
+				<!-- <a href="javascript:;">安全退出</a> -->
+			</div>
+		</div>
+	</div>
+	<div class="container w1200">
+		<div class="nav">
+			<ul>
+				<li class="active enterprise"><i></i><a href="enterprise.html" title="企业中心">企业中心</a></li>
+				<li class="booking"><i></i><a href="index.html" title="酒店预订">酒店预订</a></li>
+				<li class="order"><i></i><a href="order.html" title="订单中心">订单中心</a></li>
+			</ul>
+		</div>
+		<div class="enterprise-container">
+			<div class="t">
+				<h2>广西XXX工程管理咨询有限公司</h2>
+				<p>公司地址：广州市白云区大金钟路62号</p>
+				<p>协议号：1234567890</p>
+			</div>
+			<div class="inviolable-rights">
+				<h5>我的权益</h5>
+				<div class="l">
+					<div class="img"><img src="images/enterprise_icon1.png" alt=""></div>
+					<h6>9折</h6>
+					<p>协议折扣</p>
+				</div>
+				<div class="c">
+					<div class="img"><img src="images/enterprise_icon2.png" alt=""></div>
+					<h6>20:00</h6>
+					<p>留房时间</p>
+				</div>
+				<div class="r">
+					<div class="img"><img src="images/enterprise_icon3.png" alt=""></div>
+					<h6>14:00</h6>
+					<p>退房时间</p>
+				</div>
+			</div>
+			<div class="personal-info">
+				<h5>业务联系人信息</h5>
+				<p>联系人名称：徐笑笑</p>
+				<p>联系人手机号：156****512</p>
+			</div>
+			<div class="company-info">
+				<h5>公司附件信息</h5>
+				<p>协议合同扫描件</p>
+				<ul>
+					<li><img src="images/enterprise1.jpg" alt=""></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
