@@ -1029,7 +1029,7 @@ input {
     .booking-warpper .left > div p i {
       color: #999;
       font: 14px/1.2 "Microsoft Yahei"; }
-    .booking-warpper .left .t p input {
+    .booking-warpper .left .t p select {
       width: 90px;
       text-align: center;
       color: #333;
