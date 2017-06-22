@@ -33,16 +33,24 @@
 					<h3>预订信息</h3>
 					<p><span>入住房型：</span><span class="span-r">自主大床房</span></p>
 					<p><span>入住日期：</span><span class="span-r">2017.05.08--2017.05.06</span></p>
-					<p>
+					<div class="t-select">
 						<span>房间数 ：</span>
 						<!-- <input type="text" value="8间"> -->
-						<select>
-							<option value="">1间</option>
-							<option value="">2间</option>
-							<option value="">3间</option>
-						</select>
+						<div class="select">
+							<span>1间</span>
+							<ul>
+								<li>1间</li>
+								<li>2间</li>
+								<li>3间</li>
+								<li>3间</li>
+								<li>3间</li>
+								<li>3间</li>
+								<li>3间</li>
+								<li>3间</li>
+							</ul>
+						</div>
 						<i>*预订须知：超过6间需要在30分钟内完成付款，逾期订单将会自动取消！</i>
-					</p>
+					</div>
 				</div>
 				<div class="m">
 					<h3>入住信息</h3>
@@ -87,5 +95,16 @@
 		</div>
 	</div>
 	<div class="footer"></div>
+	<script src="scripts/jquery-1.8.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".booking-warpper .left .t .t-select .select span").bind("click",function(){
+				$(this).next().show();
+			});
+			$(".booking-warpper .left .t .t-select .select ul li").bind("click",function(){
+				$(this).parent().prev().text($(this).text()).next().hide();
+			});
+		});
+	</script>
 </body>
 </html>

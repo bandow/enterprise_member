@@ -1001,6 +1001,47 @@ input {
     .booking-warpper .left .t, .booking-warpper .left .m {
       padding-bottom: 30px;
       margin-bottom: 30px; }
+    .booking-warpper .left .t .t-select span {
+      float: left; }
+    .booking-warpper .left .t .t-select .select {
+      position: relative;
+      float: left;
+      border: 1px solid #ddd;
+      width: 80px;
+      margin: 0 20px;
+      border-radius: 3px 3px 0 0;
+      cursor: pointer; }
+      .booking-warpper .left .t .t-select .select span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        height: 24px;
+        line-height: 24px;
+        cursor: pointer; }
+      .booking-warpper .left .t .t-select .select ul, .booking-warpper .left .t .t-select .select .login-container .login-left .phone, .login-container .login-left .booking-warpper .left .t .t-select .select .phone, .booking-warpper .left .t .t-select .select .login-container .login-left .email, .login-container .login-left .booking-warpper .left .t .t-select .select .email {
+        position: absolute;
+        left: -1px;
+        top: 24px;
+        width: 80px;
+        height: 120px;
+        overflow-y: scroll;
+        display: none;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0 0 3px 3px; }
+        .booking-warpper .left .t .t-select .select ul li, .booking-warpper .left .t .t-select .select .login-container .login-left .phone li, .login-container .login-left .booking-warpper .left .t .t-select .select .phone li, .booking-warpper .left .t .t-select .select .login-container .login-left .email li, .login-container .login-left .booking-warpper .left .t .t-select .select .email li {
+          width: 100%;
+          text-align: center;
+          font-size: 14px;
+          color: #333;
+          height: 24px;
+          line-height: 24px; }
+    .booking-warpper .left .t .t-select i {
+      float: left;
+      color: #999;
+      font: 14px/24px "Microsoft Yahei"; }
     .booking-warpper .left .m {
       border-bottom: 1px solid #ddd; }
     .booking-warpper .left h3 {
