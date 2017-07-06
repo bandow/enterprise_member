@@ -93,7 +93,8 @@ input {
   padding: 30px 0;
   width: 100%;
   height: 100px;
-  background: url("../images/head_bg.jpg") no-repeat; }
+  background: url("../images/head_bg.jpg") no-repeat;
+  background-size: 100% 100%; }
   .enterprise-header .l {
     float: left; }
   .enterprise-header .r {
@@ -599,24 +600,25 @@ input {
   color: #999;
   font: 16px/1.5 "Microsoft Yahei"; }
 .register-contaier .progress {
-  margin: -40px auto 0;
+  margin: -40px 0 0 915px;
   padding: 30px 0;
-  width: 560px;
+  width: 270px;
   position: relative; }
   .register-contaier .progress .line {
-    width: 560px;
-    height: 10px;
+    width: 260px;
+    margin-left: 5px;
+    height: 5px;
     background-color: #a0a0a0; }
   .register-contaier .progress i {
     position: absolute;
-    top: 10px;
+    top: 15px;
     display: block;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     background-color: #a0a0a0;
     border-radius: 100%;
     text-align: center;
-    font: bold 18px/48px "Microsoft Yahei";
+    font: bold 18px/35px "Microsoft Yahei";
     color: #fff; }
   .register-contaier .progress i.one {
     background-color: #da004c; }
@@ -625,6 +627,17 @@ input {
     margin-left: -24px; }
   .register-contaier .progress i.three {
     right: 0; }
+  .register-contaier .progress ul, .register-contaier .progress .login-container .login-left .phone, .login-container .login-left .register-contaier .progress .phone, .register-contaier .progress .login-container .login-left .email, .login-container .login-left .register-contaier .progress .email {
+    width: 360px;
+    margin: 20px -45px 0; }
+    .register-contaier .progress ul li, .register-contaier .progress .login-container .login-left .phone li, .login-container .login-left .register-contaier .progress .phone li, .register-contaier .progress .login-container .login-left .email li, .login-container .login-left .register-contaier .progress .email li {
+      width: 120px;
+      float: left;
+      text-align: center;
+      font: 14px/1.5 "Microsoft Yahei";
+      color: #a0a0a0; }
+    .register-contaier .progress ul li.active, .register-contaier .progress .login-container .login-left .phone li.active, .login-container .login-left .register-contaier .progress .phone li.active, .register-contaier .progress .login-container .login-left .email li.active, .login-container .login-left .register-contaier .progress .email li.active {
+      color: #da2b68; }
 
 .register-info {
   margin: 30px 0;
@@ -809,13 +822,60 @@ input {
   width: 100px;
   height: 100px; }
 
-.container .title, .container .hotel-map .hotel-list .items .hotel-status .item-room, .hotel-map .hotel-list .items .hotel-status .container .item-room {
-  color: #999; }
-  .container .title a, .container .hotel-map .hotel-list .items .hotel-status .item-room a, .hotel-map .hotel-list .items .hotel-status .container .item-room a {
+.submit-success-contaier {
+  padding: 0; }
+  .submit-success-contaier > a {
+    display: block;
+    padding: 15px 0;
     color: #999;
-    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
-  .container .title .the-back, .container .hotel-map .hotel-list .items .hotel-status .item-room .the-back, .hotel-map .hotel-list .items .hotel-status .container .item-room .the-back {
-    color: #da004c; }
+    font: 16px/1.5 "Microsoft Yahei"; }
+  .submit-success-contaier .progress {
+    margin: -40px 0 0 915px;
+    padding: 30px 0;
+    width: 270px;
+    position: relative; }
+    .submit-success-contaier .progress .line {
+      width: 260px;
+      margin-left: 5px;
+      height: 5px;
+      background-color: #a0a0a0; }
+    .submit-success-contaier .progress .line2 {
+      position: absolute;
+      top: 30px;
+      width: 130px;
+      margin-left: 5px;
+      height: 5px;
+      background-color: #da004c; }
+    .submit-success-contaier .progress i {
+      position: absolute;
+      top: 15px;
+      display: block;
+      width: 35px;
+      height: 35px;
+      background-color: #a0a0a0;
+      border-radius: 100%;
+      text-align: center;
+      font: bold 18px/35px "Microsoft Yahei";
+      color: #fff; }
+    .submit-success-contaier .progress i.one {
+      background-color: #da004c; }
+    .submit-success-contaier .progress i.two {
+      left: 50%;
+      margin-left: -24px;
+      background-color: #da004c; }
+    .submit-success-contaier .progress i.three {
+      right: 0; }
+    .submit-success-contaier .progress ul, .submit-success-contaier .progress .login-container .login-left .phone, .login-container .login-left .submit-success-contaier .progress .phone, .submit-success-contaier .progress .login-container .login-left .email, .login-container .login-left .submit-success-contaier .progress .email {
+      width: 360px;
+      margin: 20px -45px 0; }
+      .submit-success-contaier .progress ul li, .submit-success-contaier .progress .login-container .login-left .phone li, .login-container .login-left .submit-success-contaier .progress .phone li, .submit-success-contaier .progress .login-container .login-left .email li, .login-container .login-left .submit-success-contaier .progress .email li {
+        width: 120px;
+        float: left;
+        text-align: center;
+        font: 14px/1.5 "Microsoft Yahei";
+        color: #a0a0a0; }
+      .submit-success-contaier .progress ul li.active, .submit-success-contaier .progress .login-container .login-left .phone li.active, .login-container .login-left .submit-success-contaier .progress .phone li.active, .submit-success-contaier .progress .login-container .login-left .email li.active, .login-container .login-left .submit-success-contaier .progress .email li.active {
+        color: #da2b68; }
 
 .submit-success {
   margin: 30px 0;
@@ -936,7 +996,7 @@ input {
       width: 70px; }
 
 .order-info {
-  margin: 30px 0;
+  margin: 30px 0 0 184px;
   padding: 30px;
   border: 1px solid #ddd;
   border-radius: 5px; }

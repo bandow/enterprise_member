@@ -13,6 +13,7 @@
 	width:100%;
 	height:100px;
 	background:url("../images/head_bg.jpg") no-repeat;
+	background-size:100% 100%;
 	.l{
 		float:left;
 	}
@@ -670,25 +671,26 @@
 		font:16px/1.5 nth($publicFont,6);
 	}
 	.progress{
-		margin:-40px auto 0;
+		margin:-40px 0 0 915px;
 		padding:30px 0;
-		width:560px;
+		width:270px;
 		position:relative;
 		.line{
-			width:560px;
-			height:10px;
+		    width: 260px;
+    		margin-left: 5px;
+			height:5px;
 			background-color:#a0a0a0;
 		}
 		i{
 			position:absolute;
-			top:10px;
+			top:15px;
 			display:block;
-			width:48px;
-			height:48px;
+			width:35px;
+			height:35px;
 			background-color:#a0a0a0;
 			border-radius:100%;
 			text-align:center;
-			font:bold 18px/48px nth($publicFont,6);
+			font:bold 18px/35px nth($publicFont,6);
 			color:#fff;
 		}
 		i.one{
@@ -700,6 +702,20 @@
 		}
 		i.three{
 			right:0;
+		}
+		ul{
+			width:360px;
+			margin:20px -45px 0;
+			li{
+				width:120px;
+				float:left;
+				text-align:center;
+				font:14px/1.5 nth($publicFont,6);
+				color:#a0a0a0;
+			}
+			li.active{
+				color:#da2b68;
+			}
 		}
 	}
 }
@@ -908,15 +924,69 @@
     height: 100px;
 }
 //submit-success
-.container{
-	.title{
+.submit-success-contaier{
+	padding:0;
+	>a{
+		display:block;
+		padding:15px 0;
 		color:#999;
-		a{
-			color:#999;
-			font:16px/1.5 $publicFont;
+		font:16px/1.5 nth($publicFont,6);
+	}
+	.progress{
+		margin:-40px 0 0 915px;
+		padding:30px 0;
+		width:270px;
+		position:relative;
+		.line{
+		    width: 260px;
+    		margin-left: 5px;
+			height:5px;
+			background-color:#a0a0a0;
 		}
-		.the-back{
-			color:#da004c;
+		.line2{
+		    position: absolute;
+    		top: 30px;
+		    width: 130px;
+    		margin-left: 5px;
+			height:5px;
+			background-color:#da004c;
+		}
+		i{
+			position:absolute;
+			top:15px;
+			display:block;
+			width:35px;
+			height:35px;
+			background-color:#a0a0a0;
+			border-radius:100%;
+			text-align:center;
+			font:bold 18px/35px nth($publicFont,6);
+			color:#fff;
+		}
+		i.one{
+			background-color:#da004c;
+		}
+		i.two{
+			left:50%;
+			margin-left:-24px;
+			background-color:#da004c;
+		}
+		i.three{
+			right:0;
+		}
+		ul{
+			width:360px;
+			margin:20px -45px 0;
+			li{
+				width:120px;
+				float:left;
+				text-align:center;
+				font:14px/1.5 nth($publicFont,6);
+				color:#a0a0a0;
+			}
+			li.active{
+				color:#da2b68;
+			}
 		}
 	}
 }
@@ -1071,7 +1141,7 @@
 }
 //order-info
 .order-info{
-	margin:30px 0;
+	margin:30px 0 0 184px;
 	padding:30px;
 	border:1px solid #ddd;
 	border-radius:5px;
