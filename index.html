@@ -12,6 +12,11 @@
 <link rel="stylesheet" href="styles/jquery.ui.css">
 <link rel="stylesheet" href="styles/simplePagination.css">
 <style>
+	.all-hotel .sort ul .active span{
+		color:#da004c;
+	}
+</style>
+<style>
 	/****************日期插件样式******************/
 	.ui-datepicker-append{
 	    color: #999999;
@@ -414,6 +419,9 @@
 		        itemsOnPage: 2,
 		        cssStyle: 'compact-theme'
 		    });
+		    $(".all-hotel .sort li").on("click",function(){
+				$(this).addClass("active").siblings().removeClass("active");
+			});
 		})
 	</script>
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ia21oG6eioiE5yKW2ERRB2P6lOcpAyGh"></script>
