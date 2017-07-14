@@ -435,7 +435,7 @@ input {
   position: relative;
   float: left; }
   .login-container .login-left ul, .login-container .login-left .phone, .login-container .login-left .email {
-    padding: 0 15px;
+    padding: 0 0;
     margin-bottom: 8px;
     width: 120px;
     height: auto;
@@ -443,18 +443,20 @@ input {
     border-radius: 5px;
     overflow: hidden; }
     .login-container .login-left ul li, .login-container .login-left .phone li, .login-container .login-left .email li {
-      padding: 20px 0;
+      padding: 20px 15px;
       border-bottom: 1px solid #ddd;
       font: 14px/1.5 "Microsoft Yahei";
       color: #666;
       text-align: center;
       cursor: pointer; }
-      .login-container .login-left ul li .content, .login-container .login-left .phone li .content, .login-container .login-left .email li .content {
+      .login-container .login-left ul li .r-wrapper, .login-container .login-left .phone li .r-wrapper, .login-container .login-left .email li .r-wrapper {
         position: absolute;
         top: 0;
-        left: 150px;
+        left: 120px;
+        padding-left: 30px;
+        display: none; }
+      .login-container .login-left ul li .content, .login-container .login-left .phone li .content, .login-container .login-left .email li .content {
         padding: 10px;
-        display: none;
         width: 250px;
         min-height: 305px;
         height: auto;
@@ -464,7 +466,7 @@ input {
         .login-container .login-left ul li .content:before, .login-container .login-left .phone li .content:before, .login-container .login-left .email li .content:before {
           position: absolute;
           top: 20px;
-          left: -16px;
+          left: 13px;
           z-index: 2;
           content: "";
           width: 0;
@@ -477,7 +479,7 @@ input {
         .login-container .login-left ul li .content:after, .login-container .login-left .phone li .content:after, .login-container .login-left .email li .content:after {
           position: absolute;
           top: 20px;
-          left: -17px;
+          left: 12px;
           z-index: 1;
           content: "";
           width: 0;

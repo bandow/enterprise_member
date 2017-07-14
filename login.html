@@ -17,29 +17,35 @@
 		<div class="login-left">
 			<ul>
 				<li>欢迎致辞
-					<div class="content content1">
-						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容1</p>
+					<div class="r-wrapper">
+						<div class="content content1">
+							<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容1</p>
+						</div>
 					</div>
 				</li>
 				<li>会员权益
+				<div class="r-wrapper">
 					<div class="content content2">
 						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这2</p>
-					</div>
+					</div></div>
 				</li>
 				<li>如何申请
+				<div class="r-wrapper">
 					<div class="content content3">
 						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容23</p>
-					</div>
+					</div></div>
 				</li>
 				<li>如何预订
+				<div class="r-wrapper">
 					<div class="content content4">
 						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容4</p>
-					</div>
+					</div></div>
 				</li>
 				<li class="bottom">注意事项
+				<div class="r-wrapper">
 					<div class="content content5">
 						<p>这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内容这是相关的内这是相关的内容5</p>
-					</div>
+					</div></div>
 				</li>
 			</ul>
 			<div class="phone">
@@ -73,11 +79,11 @@
 		$(".login-left ul li").each(function(index,element){
 			$(this).on("mouseenter",function(){
 				$(this).addClass("active");
-				$(this).find(".content").show();
+				$(this).find(".r-wrapper").show();
 			})
 			$(this).on("mouseleave",function(){
 				$(this).removeClass("active");
-				$(this).find(".content").hide();
+				$(this).find(".r-wrapper").hide();				
 			});
 		});
 

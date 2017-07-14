@@ -153,6 +153,52 @@
 				}					
 			});
 
+			$(".info-list .item input").on("blur",function(){
+				if($(".company-name input").val()==123){
+					$(".company-name").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".company-name").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".address input").val()==123){
+					$(".address").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".address").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".city input").val()==123){
+					$(".city").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".city").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".cooperate input").val()==123){
+					$(".cooperate").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".cooperate").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".name input").val()==123){
+					$(".name").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".name").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".phone1 input").val()==123){
+					$(".phone1").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".phone1").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".phone2 input").val()==123){
+					$(".phone2").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".phone2").next().html('<p>请输入公司名称</p>');
+				}
+				if($(".email input").val()==123){
+					$(".email").next().html('<i><img src="images/exactness_icon.png" alt=""></i>');
+				}else{
+					$(".email").next().html('<p>请输入公司名称</p>');
+				}
+
+			})
+
+			 
+
 			
 		})
 	</script>
