@@ -419,6 +419,23 @@
 		        itemsOnPage: 2,
 		        cssStyle: 'compact-theme'
 		    });
+		    //修改分页问题
+		    var allLiWidth=0;
+		    var pagingWidth=$("#paging").width();
+		    var pagingUlWidth=$("#paging ul li").width();
+		    $("#paging ul li").each(function(){
+				allLiWidth+=$(this).width();
+		    });
+		    var pagingMarginLeft=(pagingWidth-allLiWidth)/2;
+		    $("#paging ul").css("margin-left",pagingMarginLeft);
+            //添加阴影
+		    $(".hotel-map .hotel-list").on("mouseenter",function(){
+				$(this).addClass("active");
+		    });
+		     $(".hotel-map .hotel-list").on("mouseleave",function(){
+				$(this).removeClass("active");
+		    });
+
 		    $(".all-hotel .sort li").on("click",function(){
 				$(this).addClass("active").siblings().removeClass("active");
 			});
